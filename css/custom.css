@@ -6,6 +6,9 @@
     font-size: 14px;
 }
 
+html{
+    scroll-behavior:smooth ;
+}
 .header-section{ 
     padding: 15px;
     height: 85px;
@@ -97,6 +100,31 @@
         color: white;
     }
 
+    .slider-section{
+        background: rgb(241 241 241);
+        margin-top: 2px;
+        padding: 35px;
+        height:auto ;
+    }
+    
+    .slider-section .text-line{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .slider-section .enquiry{
+        text-align: center;
+        margin-top: 35px;
+    }
+    .slider-section .enquiry .btn-enqury{
+        padding: 10px 70px;
+        background: rgb(253, 114, 15);
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
 @media(min-width:300px) and (max-width:800px){
     .header-contact .text-call{
         display: none;

@@ -9,16 +9,18 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
      <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/custom.css" />
 <link rel="stylesheet" href="css/fonts-assets/icofont.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
       
 </head>
 <body>
-   <header>
+   <header id="contact-enquiry" >
     <nav class="header-section fixed-top">
         <div class="nav-wrapper container">
         <div class="header-tile">
@@ -30,7 +32,7 @@
             <a class="text-call" href="tel:+918558555566" title="call us"><h5>Call Us : +918558555566 </h5></a>
             <a class="call-icon d-none" href="tel:+918558555566" title="call us"><h5><span class="icofont-ui-cell-phone text-call-icon"></h5></a>
         </div>
-      </nav>
+      </nav>  
    </header>
 
    <section class="banner-contact z-depth-2" >
@@ -93,12 +95,27 @@
             </div>
         </div>
    </section>
+   <section class="slider-section">
+      <div class="image-section">
+        <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="100%" src="https://www.bowcockpursaill.co.uk/wp-content/uploads/2019/02/privacy-policy-banner.jpg">
+      </div>
+      <div class="text-line">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="enquiry">
+          <a href="#contact-enquiry" class="btn-enqury">Enquiry now <i class="icofont-paper-plane"></i></a>
+      </div>
+  </section>
 
-
-
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
+  <script>
+   $(document).ready(function(){
+    $('.slider').slider();
+    $('.materialboxed').materialbox();
+   
+  });
+    
+  </script>
 </body>
 </html>
