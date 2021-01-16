@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.header-section{ 
+    padding: 15px;
+    height: 85px;
+}
+.header-section h2{font-weight: bold;}
+.header-section h6{
+    margin-left: 35px;
+    margin-top: -3px;
+}
+
+.header-contact{
+    margin-top: -48px;
+    
+}
+
+.header-contact a{text-decoration: none; color: white; }
+
+.banner-contact{
+    height: auto;
+    background: #9c9292;
+    overflow: hidden;
+    margin-top: 85px;
+   
+}
+.banner-content{
+    padding: 45px;
+
+}
+
+.banner-contact .head-text{
+    text-align: center;
+    width: 50%;
+    /* color: yellow; */
+}
+.banner-contact .head-text h3{
+    font-size: 35px !important;
+    font-weight: 900;
+    color: #fbde0d;
+    line-height: 44px;
+    /* word-spacing: -13px; */
+    text-transform: uppercase;
+}
+.banner-contact .text-information{
+    width: 60%;
+    margin-top: 15px;
+    text-align: left;
+    color: white;
+}
+.banner-contact .text-information p{
+    font-size: 18px;
+}
+.wht-contact a{
+    text-decoration: none;
+    color: white;
+}
+.wht-contact a span{
+    font-size: 20px;
+     margin-left: 6px;
+     overflow: hidden;
+    }
+
+    .wht-contact a span:hover{
+        color: greenyellow;
+    }
+    .submit-form {
+        padding: 15px;
+        color: white;
+       
+    }
+    .submit-form .form-header{
+        margin-bottom: 25px;
+    }
+    .submit-form label{color: white; font-size: 15px; margin-top: 10px;}
+    .submit-form input,textarea,select{
+        background-color:white !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important; 
+        width: 90% !important;
+    }
+
+    .submit-form .btn-submit{
+        padding: 10px;
+        width: 97%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+    }
+
+@media(min-width:300px) and (max-width:800px){
+    .header-contact .text-call{
+        display: none;
+    }
+    .header-contact .call-icon{
+        display: block !important;
+        
+    }
+    .header-contact .text-call-icon{
+        font-size: 28px !important;
+    }
+
+    .banner-contact .head-text{width: 100%;text-align: left;}
+    .banner-contact .head-text h3{ font-size: 30px !important;}
+    .banner-contact .text-information{width: 100%;text-align: left;}
+    
+}
