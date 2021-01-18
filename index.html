@@ -9,7 +9,7 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- Compiled and minified JavaScript -->
-     
+     <link rel="icon" href="images/fevicon.png" />
      <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/custom.css" />
@@ -19,7 +19,8 @@
   
       
 </head>
-<body>
+<body onload="myloading()">
+  <div id="preloader"></div>
    <header id="contact-enquiry" >
     <nav class="header-section fixed-top">
         <div class="nav-wrapper container">
@@ -107,6 +108,34 @@
       </div>
   </section>
 
+<br>
+  <section class="bumper-offer-section">
+    <div class="image-section">
+      <img class="img-fluid"  width="100%" src="https://www.bowcockpursaill.co.uk/wp-content/uploads/2019/02/privacy-policy-banner.jpg">
+    </div>
+    
+    <div class="click-enquiry">
+        <a href="" class="btn-enqury">Click & Choose <i class="icofont-paper-plane"></i></a>
+    </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+    <p class="text-center p-link">Copyright @2021 | Designed With by <a href="http://www.itsitsolutions.com"> http://www.itsitsolutions.com</a></p>
+    
+    <ul class="social_footer_ul">
+    <li><a href="http://webenlance.com"><i class="icofont-facebook"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="icofont-twitter"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="icofont-linkedin"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="icofont-instagram"></i></a></li>
+    </ul>
+    
+    </div>
+    
+    </footer>
+    
+  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script>
@@ -115,6 +144,12 @@
     $('.materialboxed').materialbox();
    
   });
+  function myloading(){
+    setTimeout(()=>{
+      $("#preloader").css("display","none");
+    },1000);
+   
+  }
     
   </script>
 </body>

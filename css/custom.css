@@ -9,6 +9,16 @@
 html{
     scroll-behavior:smooth ;
 }
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  background: white url(../images/loading.gif) no-repeat;
+  background-size: 15%;
+  background-position: center;
+  
+}
 .header-section{ 
     padding: 15px;
     height: 85px;
@@ -101,7 +111,7 @@ html{
     }
 
     .slider-section{
-        background: rgb(241 241 241);
+        background: #ece6e6;
         margin-top: 2px;
         padding: 35px;
         height:auto ;
@@ -116,7 +126,7 @@ html{
         margin-top: 35px;
     }
     .slider-section .enquiry .btn-enqury{
-        padding: 10px 70px;
+        padding: 15px 70px;
         background: rgb(253, 114, 15);
         border: none;
         outline: none;
@@ -124,7 +134,65 @@ html{
         font-weight: bold;
         color: white;
         text-decoration: none;
+    
     }
+
+    .slider-section .enquiry .btn-enqury:hover{
+     
+      background: rgb(241, 112, 19);
+  
+  }
+
+  .bumper-offer-section{
+    background: #ece6e6;
+    margin-top: 2px;
+    padding: 35px;
+    height:auto ;
+}
+
+.bumper-offer-section .enquiry{
+  text-align: center;
+  margin-top: 35px;
+}
+.bumper-offer-section .click-enquiry{
+  text-align: center;
+  margin-top: 35px;
+}
+
+.bumper-offer-section .click-enquiry a{
+  text-decoration: none;
+  background: rgb(241, 112, 19);;
+  padding: 20px 150px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  font-size: 20px;
+  color: white;
+}
+
+  .footer{
+    background: rgb(44, 44, 44);
+    padding: 20px;
+    color: white;
+  }
+
+  .p-link a{text-decoration: none; color: white;}
+  /*footer*/
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-color:#263238; }
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%; text-decoration: none;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+    
 @media(min-width:300px) and (max-width:800px){
     .header-contact .text-call{
         display: none;
@@ -140,5 +208,13 @@ html{
     .banner-contact .head-text{width: 100%;text-align: left;}
     .banner-contact .head-text h3{ font-size: 30px !important;}
     .banner-contact .text-information{width: 100%;text-align: left;}
+
+    .bumper-offer-section .click-enquiry a{
+      padding: 12px 60px;
+    }
+
+    #preloader {
+      background-size: 30%;
+    }
     
 }
