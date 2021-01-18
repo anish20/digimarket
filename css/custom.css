@@ -19,6 +19,7 @@ html{
   background-position: center;
   
 }
+#contact-enquiry{display: none;}
 .header-section{ 
     padding: 15px;
     height: 85px;
