@@ -40,7 +40,7 @@ html{
 
 .banner-contact{
     height: auto;
-    background: url(https://anish20.github.io/digimarket/images/1200px%20x%20600px.gif) no-repeat;
+    background: url(../images/1200px\ x\ 600px.gif) no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
     margin-top: 85px;
