@@ -150,13 +150,13 @@ body {
   .bumper-offer-section{
     background: #ece6e6;
     margin-top: 2px;
-    padding: 35px;
+    padding: 30px 0;
     height:auto ;
 }
 
 .bumper-offer-section .enquiry{
   text-align: center;
-  margin-top: 35px;
+  /* margin-top: 35px; */
 }
 .bumper-offer-section .click-enquiry{
   text-align: center;
