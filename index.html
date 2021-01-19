@@ -39,19 +39,7 @@
    <section class="banner-contact z-depth-2" >
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12">
-                <div class="banner-content animate__animated animate__fadeInDown">
-               <div class="head-text">
-                   <h3>Lucky Draw Head Office Price Department</h3>
-               </div>
-               <div class="text-information">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-                </p>
-                <div class="wht-contact">
-                    <a href="https://api.whatsapp.com/send?phone=+919148016022"><i class="icofont-brand-whatsapp icofont-2x" style="color: #25D366;"></i> <span>+919148016022</span> </a>
-                </div>
-            </div>
-            </div>
+             
             <br>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
@@ -59,34 +47,38 @@
                         <div class="submit-form bg-info">
                             <div class="form-header"> <h4>Sign Up Now</h4></div>
                                 <div class="form-group row">
-                                  <label for="staticEmail" class="col-sm-3 col-form-label"><b>Full Name</b></label>
+                                  <label for="fname"class="col-sm-3 col-form-label"><b>Full Name</b></label>
                                   <div class="col-sm-9">
-                                    <input type="text" class="form-control"  >
+                                    <input type="text"  id="fname" class="form-control"  >
+                                    <div id="error_fname"></div>
                                   </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label"><b>Email Id</b></label>
+                                    <label for="email" class="col-sm-3 col-form-label"><b>Email Id</b></label>
                                     <div class="col-sm-9">
-                                      <input type="text" class="form-control"  >
+                                      <input type="email"  id="email" class="form-control">
+                                      <div id="error_email"></div>
                                     </div>
                                   </div>
 
                                   <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label"><b>Phone No</b></label>
+                                    <label for="phone_no" class="col-sm-3 col-form-label"><b>Phone No</b></label>
                                     <div class="col-sm-9">
-                                      <input type="text" class="form-control"  >
+                                      <input type="text" id="phone_no" class="form-control" maxlength="10">
+                                      <div id="error_phone"></div>
                                     </div>
                                   </div>
 
                                   <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label"><b>Address</b></label>
+                                    <label for="address" class="col-sm-3 col-form-label"><b>Address</b></label>
                                     <div class="col-sm-9">
-                                      <input type="text" class="form-control"  >
+                                      <input type="text" id="address" class="form-control">
+                                      <div id="error_address"></div>
                                     </div>
                                   </div>
                                   <div class=" row">
                                       <div class="col-sm-12">
-                                          <button class="btn-submit bg-warning">Submit</button>
+                                          <button class="btn-submit bg-warning"  onclick="onSubmitData();">Submit</button>
                                       </div>
                                   </div>
                                
@@ -98,7 +90,7 @@
    </section>
    <section class="slider-section">
       <div class="image-section">
-        <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="100%" src="https://www.bowcockpursaill.co.uk/wp-content/uploads/2019/02/privacy-policy-banner.jpg">
+        <img class="img-fluid"  width="100%" src="https://www.bowcockpursaill.co.uk/wp-content/uploads/2019/02/privacy-policy-banner.jpg">
       </div>
       <div class="text-line">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -111,7 +103,7 @@
 <br>
   <section class="bumper-offer-section">
     <div class="image-section">
-      <img class="img-fluid"  width="100%" src="https://www.bowcockpursaill.co.uk/wp-content/uploads/2019/02/privacy-policy-banner.jpg">
+      <img class="img-fluid"  width="100%" src="images/1200px x 600px.png">
     </div>
     
     <div class="click-enquiry">
@@ -138,20 +130,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script>
-   $(document).ready(function(){
-    $('.slider').slider();
-    $('.materialboxed').materialbox();
-   
-  });
-  function myloading(){
-    setTimeout(()=>{
-      $("#preloader").css("display","none");
-      $("#contact-enquiry").css("display","block");
-    },1000);
-   
-  }
-    
-  </script>
+  <script src="js/process.js"></script>
 </body>
 </html>
