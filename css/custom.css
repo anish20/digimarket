@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
 
@@ -21,29 +21,22 @@ html{
   
 }
 #contact-enquiry{display: none;}
-.header-section{ 
-    padding: 15px;
-    height: 85px;
-}
-.header-section h2{font-weight: bold;}
-.header-section h6{
-    margin-left: 35px;
-    margin-top: -3px;
-}
 
-.header-contact{
-    margin-top: -48px;
-    
+.header-section h2{font-weight: bold; margin-top: 15px; color: black;}
+.header-contact {margin-top: -36px;}
+
+.header-contact a{text-decoration: none; color: black; }
+.form-container{
+    position: absolute;
+    left: -35px;
+    top: 81px;
 }
-
-.header-contact a{text-decoration: none; color: white; }
-
 .banner-contact{
-    height: auto;
+    height: 600px;
     background: url(../images/1200X600px.gif) no-repeat;
-    background-size: 100% 100%;
     overflow: hidden;
-    margin-top: 85px;
+    background-size: 100% 100%;
+    margin-top: 65px;
    
 }
 .banner-content{
@@ -114,7 +107,7 @@ html{
     }
 
     .slider-section{
-        background: #ece6e6;
+        /* background: #ece6e6; */
         margin-top: 2px;
         padding: 35px;
         height:auto ;
@@ -172,29 +165,6 @@ html{
   color: white;
 }
 
-  .footer{
-    background: rgb(44, 44, 44);
-    padding: 20px;
-    color: white;
-  }
-
-  .p-link a{text-decoration: none; color: white;}
-  /*footer*/
-.col_white_amrc { color:#FFF;}
-footer { width:100%; background-color:#263238; }
-.pt2 { padding-top:40px ; margin-bottom:20px ;}
-footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
-.mb10 { padding-bottom:15px ;}
-.fleft { float:left;}
-.padding-right { padding-right:10px; }
-
-.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
-
-.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
-.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
-.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%; text-decoration: none;}
-.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
-
     
 @media(min-width:300px) and (max-width:800px){
     .header-contact .text-call{
@@ -207,11 +177,13 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
     .header-contact .text-call-icon{
         font-size: 28px !important;
     }
-
+    .banner-contact{margin-top: 56px;}
     .banner-contact .head-text{width: 100%;text-align: left;}
     .banner-contact .head-text h3{ font-size: 30px !important;}
     .banner-contact .text-information{width: 100%;text-align: left;}
-
+    .form-container {
+        position:unset; 
+    }
     .bumper-offer-section .click-enquiry a{
       padding: 12px 60px;
     }
