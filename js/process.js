@@ -14,6 +14,8 @@ function myloading(){
  setTimeout(()=>{
    $("#preloader").css("display","none");
    $("#contact-enquiry").css("display","block");
+   $("body").css("overflow","visible");
+
  },1000);
 }
 
