@@ -185,7 +185,7 @@ body {
     .header-contact .text-call-icon{
         font-size: 28px !important;
     }
-    .banner-contact{margin-top: 56px;}
+    .banner-contact{margin-top: 56px; height: auto; }
     .banner-contact .head-text{width: 100%;text-align: left;}
     .banner-contact .head-text h3{ font-size: 30px !important;}
     .banner-contact .text-information{width: 100%;text-align: left;}
